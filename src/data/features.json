@@ -1,0 +1,113 @@
+{
+  "features": [
+    {
+      "code": "SELIC",
+      "source": "bcb",
+      "series_id": "432",
+      "alternative_id": "11",
+      "description": "Taxa Selic"
+    },
+    {
+      "code": "DI_FUTURO",
+      "source": "BCB",
+      "series_id": "4389",
+      "alternative_id": "7834",
+      "description": "Taxa DI-Futuro"
+    },
+    {
+      "code": "CDS",
+      "source": "BCB",
+      "series_id": "14443",
+      "alternative_id": "3841",
+      "description": "Credit Default Swap"
+    },
+    {
+      "code": "DIVIDA_PUBLICA",
+      "source": "bcb",
+      "series_id": "4505",
+      "description": "Dívida Pública"
+    },
+    {
+      "code": "BALANCA_COMERCIAL",
+      "source": "bcb",
+      "series_id": "22701",
+      "description": "Balança Comercial"
+    },
+    {
+      "code": "RESERVAS_INTERNACIONAIS",
+      "source": "bcb",
+      "series_id": "13621",
+      "description": "Reservas Internacionais"
+    },
+    {
+      "code": "INVESTIMENTO_ESTRANGEIRO",
+      "source": "bcb",
+      "series_id": "22595",
+      "description": "Investimento Estrangeiro"
+    },
+    {
+      "code": "PIB_BR",
+      "source": "bcb",
+      "series_id": "4380",
+      "description": "PIB Brasil"
+    },
+    {
+      "code": "SOJA_BR",
+      "source": "bcb",
+      "series_id": "27579",
+      "description": "Soja Brasil"
+    },
+    {
+      "code": "SOJA_US",
+      "source": "YAHOO",
+      "series_id": "ZS=F",
+      "description": "Futuros de Soja EUA"
+    },
+    {
+      "code": "MILHO_BR",
+      "source": "bcb",
+      "series_id": "27577",
+      "description": "Milho Brasil"
+    },
+    {
+      "code": "MILHO_US",
+      "source": "YAHOO",
+      "series_id": "ZC=F",
+      "description": "Futuros de Milho EUA"
+    },
+    {
+      "code": "ENERGIA",
+      "source": "bcb",
+      "series_id": "1398",
+      "description": "Energia Elétrica"
+    },
+    {
+      "code": "BALTIC_DRY",
+      "source": "bcb",
+      "series_id": "21774",
+      "description": "Baltic Dry Index"
+    },
+    {
+      "code": "DOLAR",
+      "source": "YAHOO",
+      "series_id": "USDBRL=X",
+      "description": "Cotação do dólar em reais"
+    },
+    {
+      "code": "CUSTO_LOGISTICA",
+      "source": "bcb",
+      "series_id": "21777",
+      "description": "Custo Logístico"
+    },
+    {
+      "code": "FRETES",
+      "source": "bcb",
+      "series_id": "7385",
+      "description": "Índice de Fretes"
+    }
+  ],
+  "api_endpoints": {
+    "bcb": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{series_id}/dados",
+    "yahoo": "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+  }
+} 

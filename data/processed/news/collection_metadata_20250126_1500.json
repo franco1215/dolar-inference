@@ -1,0 +1,37 @@
+{
+    "timestamp": "2025-01-26T15:00:38.422762",
+    "successful_sources": [
+        "https://www.moneytimes.com.br/feed/",
+        "https://www.imf.org/en/News/rss",
+        "https://www.federalreserve.gov/feeds/press_all.xml",
+        "https://br.investing.com/rss/news_285.rss",
+        "https://www.ecb.europa.eu/rss/press.html",
+        "https://br.investing.com/rss/news_301.rss"
+    ],
+    "failed_sources": {
+        "banco_central": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "federal_reserve": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "banco_central_api": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://www.infomoney.com.br/feed/": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://www.worldbank.org/en/news/all.rss": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://g1.globo.com/rss/g1/economia/mercados/": "Sem artigos retornados ap\u00f3s todas tentativas"
+    },
+    "source_attempts": {
+        "banco_central": 3,
+        "federal_reserve": 3,
+        "banco_central_api": 3,
+        "https://www.infomoney.com.br/feed/": 3,
+        "https://www.moneytimes.com.br/feed/": 0,
+        "https://br.investing.com/rss/news_301.rss": 0,
+        "https://br.investing.com/rss/news_285.rss": 0,
+        "https://g1.globo.com/rss/g1/economia/mercados/": 3,
+        "https://www.federalreserve.gov/feeds/press_all.xml": 0,
+        "https://www.imf.org/en/News/rss": 0,
+        "https://www.worldbank.org/en/news/all.rss": 3,
+        "https://www.ecb.europa.eu/rss/press.html": 0
+    },
+    "collection_stats": {
+        "total_sources": 12,
+        "success_rate": 50.0
+    }
+}

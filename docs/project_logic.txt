@@ -1,0 +1,180 @@
+LÓGICA DO PROJETO: INFERÊNCIA DO DÓLAR
+=====================================
+
+1. FLUXO DE DADOS
+-----------------
+Entrada -> Processamento -> Seleção -> Modelagem -> Previsão
+
+2. COLETA DE DADOS
+-----------------
+a) Notícias (RSS Feeds)
+   - Fontes: Reuters, Valor, Bloomberg, BC
+   - BERT multilíngue para sentimento
+   - LDA para tópicos relevantes
+   - Score = sentimento * relevância * peso_temporal
+
+b) Dados Históricos
+   - Cotações diárias do dólar
+   - Indicadores econômicos
+   - Dados de mercado
+
+3. SELEÇÃO DE VARIÁVEIS
+----------------------
+Processo em 4 etapas com pesos:
+
+a) Estatística (30%)
+   - Correlação (Pearson/Spearman)
+   - Causalidade de Granger
+   - Significância estatística
+
+b) Machine Learning (20%)
+   - Random Forest importance
+   - Validação temporal
+   - Estabilidade das features
+
+c) LASSO (20%)
+   - Regularização L1
+   - Alpha via cross-validation
+   - Seleção automática
+
+d) Técnica (30%)
+   - Tendência: SMA, EMA, Bollinger
+   - Momentum: RSI, Estocástico
+   - Volatilidade: ATR, desvio padrão
+
+4. MODELO DE INFERÊNCIA
+----------------------
+Ensemble com 4 modelos:
+
+a) Random Forest
+   - n_estimators=200
+   - max_depth=10
+   - min_samples_leaf=2
+
+b) Gradient Boosting
+   - n_estimators=200
+   - learning_rate=0.05
+   - max_depth=6
+
+c) XGBoost
+   - learning_rate=0.05
+   - subsample=0.8
+   - colsample_bytree=0.8
+
+d) LASSO
+   - alpha: logspace(-4, 1, 50)
+   - max_iter=2000
+
+Pesos: Dinâmicos baseados no R² (mínimo 10% cada)
+
+5. FEATURE ENGINEERING
+---------------------
+a) Temporais
+   - Calendário: dia, mês, trimestre
+   - Lags: 1, 2, 3, 5, 10, 21 dias
+   - Diferenças e volatilidades
+
+b) Técnicas
+   - Médias móveis (5/20 dias)
+   - Bandas de Bollinger
+   - RSI e Estocástico
+
+c) Estatísticas
+   - Curtose e assimetria
+   - Volatilidade móvel
+   - Correlações defasadas
+
+6. VALIDAÇÃO
+------------
+a) Temporal
+   - TimeSeriesSplit adaptativo
+   - Mínimo 30 amostras/fold
+   - Preserva ordem cronológica
+
+b) Métricas
+   - MAE: erro absoluto médio
+   - RMSE: erro quadrático médio
+   - R²: qualidade do ajuste
+   - Acurácia direcional
+
+7. PREVISÃO
+-----------
+a) Ensemble
+   - Média ponderada dos modelos
+   - Pesos atualizados por performance
+   - Combinação original + PCA
+
+b) Intervalo de Confiança
+   - Volatilidade recente (21 dias)
+   - Dispersão das previsões
+   - Nível: 95%
+
+8. REQUISITOS MÍNIMOS
+--------------------
+- 30 registros para treino
+- 21 dias para volatilidade
+- Features sem missing values
+- Dados normalizados (RobustScaler)
+
+9. SAÍDA
+--------
+a) Previsão
+   - Valor para próximo dia
+   - Intervalo de confiança
+   - Direção esperada
+
+b) Metadados
+   - Features utilizadas
+   - Pesos dos modelos
+   - Métricas de performance
+   - Timestamp 
+
+10. INFERÊNCIA MONTE CARLO
+------------------------
+a) Conceito
+   - Simulação estocástica
+   - 10.000 cenários por previsão
+   - Combinação de tendência e aleatoriedade
+
+b) Modelo Base (Random Forest)
+   - Captura tendência geral
+   - Usa todas features disponíveis
+   - Treino com dados históricos
+
+c) Simulação
+   - Retornos aleatórios (distribuição normal)
+   - Volatilidade histórica (21 dias)
+   - Tendências de curto/médio prazo
+
+d) Melhorias
+   - Maior robustez estatística
+   - Melhor estimativa de risco
+   - Captura de eventos extremos
+   - Distribuição completa de preços
+
+e) Cuidados Necessários
+   - Verificar estacionariedade
+   - Monitorar mudanças de regime
+   - Validar premissas de normalidade
+   - Atualizar volatilidade diariamente
+   - Considerar correlações temporais
+
+f) Vantagens vs Ensemble
+   - Distribuição completa de preços
+   - Melhor estimativa de risco
+   - Captura de eventos extremos
+   - Probabilidades de direção
+   - Intervalos mais realistas
+
+g) Limitações
+   - Premissa de normalidade
+   - Sensibilidade à volatilidade
+   - Custo computacional maior
+   - Necessidade de mais dados
+
+h) Recomendações de Uso
+   - Combinar com análise técnica
+   - Monitorar qualidade dos dados
+   - Ajustar parâmetros periodicamente
+   - Validar resultados historicamente
+   - Usar múltiplas janelas temporais 

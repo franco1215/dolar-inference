@@ -1,0 +1,88 @@
+{
+    "timestamp": "20250125_1518",
+    "metrics": {
+        "mae": 0.0312855210018948,
+        "rmse": 0.046582110601677953,
+        "r2": 0.9533730830235407,
+        "accuracy": 0.6414715719063546
+    },
+    "features": [
+        "RESERVAS_INTERNACIONAIS",
+        "DIVIDA_PUBLICA",
+        "SELIC",
+        "SOJA_US",
+        "MILHO_US",
+        "BALANCA_COMERCIAL",
+        "news_prob_mean",
+        "FRETES",
+        "PIB_BR",
+        "CUSTO_LOGISTICA",
+        "news_impact_mean_volatility",
+        "news_impact_mean_trend_volatility",
+        "news_prob_mean_volatility",
+        "news_impact_mean",
+        "news_prob_mean_trend_volatility",
+        "ENERGIA",
+        "news_count_trend",
+        "news_count_volatility",
+        "news_count_trend_volatility",
+        "news_count",
+        "DOLAR_sma_5",
+        "DOLAR_sma_20",
+        "DOLAR_ema_5",
+        "DOLAR_ema_20",
+        "DOLAR_bb_high",
+        "DOLAR_bb_low",
+        "DOLAR_atr",
+        "DOLAR_rsi",
+        "DOLAR_stoch",
+        "day_of_week",
+        "month",
+        "quarter",
+        "DOLAR_lag_1",
+        "DOLAR_diff_1",
+        "DOLAR_lag_2",
+        "DOLAR_diff_2",
+        "DOLAR_lag_3",
+        "DOLAR_diff_3",
+        "DOLAR_lag_5",
+        "DOLAR_diff_5",
+        "DOLAR_lag_10",
+        "DOLAR_diff_10",
+        "DOLAR_lag_21",
+        "DOLAR_diff_21",
+        "DOLAR_volatility_5",
+        "DOLAR_volatility_21",
+        "DOLAR_kurt_5",
+        "DOLAR_skew_5",
+        "DOLAR_kurt_21",
+        "DOLAR_skew_21"
+    ],
+    "model_weights": {
+        "rf": 0.21964007684818307,
+        "gb": 0.23395175890329095,
+        "xgb": 0.22572777842575817,
+        "lasso": 0.3206803858227678
+    },
+    "next_day_prediction": {
+        "date": "2025-01-26",
+        "prediction": 5.841824383777097,
+        "confidence_interval": {
+            "lower": 5.67952548266661,
+            "upper": 6.0041232848875845
+        },
+        "model_predictions": {
+            "rf": 5.8194099373439006,
+            "gb": 5.79960647694948,
+            "xgb": 5.800164461135864,
+            "lasso": 5.917300986506407
+        },
+        "model_weights": {
+            "rf": 0.21964007684818307,
+            "gb": 0.23395175890329095,
+            "xgb": 0.22572777842575817,
+            "lasso": 0.3206803858227678
+        },
+        "recent_volatility": 0.06698399044279926
+    }
+}

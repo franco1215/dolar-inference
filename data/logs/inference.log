@@ -1,0 +1,6 @@
+2025-01-28 01:47:23,241 - __main__ - INFO - Dados históricos carregados: 1324 registros
+2025-01-28 01:47:23,241 - __main__ - ERROR - Erro ao carregar impacto das notícias: [Errno 2] No such file or directory: '/Users/paulohenriquealves/Documents/Projetos/financial_inference/data/news'
+2025-01-28 01:47:23,242 - __main__ - INFO - DolarInference inicializado com sucesso
+2025-01-28 01:47:23,245 - __main__ - ERROR - Erro ao preparar features: 'USD'
+2025-01-28 01:47:23,245 - __main__ - ERROR - Erro na inferência: Não foi possível preparar as features para inferência
+2025-01-28 01:47:23,245 - __main__ - ERROR - Erro na inferência: 'last_price'

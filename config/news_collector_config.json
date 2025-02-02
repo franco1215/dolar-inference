@@ -1,0 +1,105 @@
+{
+    "news_sources": {
+        "official_sources": {
+            "banco_central": {
+                "endpoint": "https://www.bcb.gov.br/api/feed/sitemap",
+                "topics": ["câmbio", "dólar", "política monetária", "taxa selic"]
+            },
+            "federal_reserve": {
+                "endpoint": "https://www.federalreserve.gov/feeds/press_all.xml",
+                "topics": ["monetary policy", "interest rates", "forex"]
+            },
+            "banco_central_api": {
+                "endpoint": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{series_id}/dados",
+                "series": {
+                    "dolar_ptax": "1",
+                    "selic": "432",
+                    "ipca": "433"
+                }
+            }
+        },
+        "rss_feeds": {
+            "primary": [
+                "https://agenciadenoticias.bcb.gov.br/feed.xml",
+                "https://www.infomoney.com.br/feed/",
+                "https://www.moneytimes.com.br/feed/",
+                "https://br.investing.com/rss/news_301.rss",
+                "https://br.investing.com/rss/news_285.rss",
+                "https://www.reuters.com/arc/outboundfeeds/v3/all/",
+                "https://economia.uol.com.br/feed/cambio.xml",
+                "https://g1.globo.com/rss/g1/economia/mercados/"
+            ],
+            "backup_feeds": [
+                "https://www.infomoney.com.br/mercados/feed/",
+                "https://www.moneytimes.com.br/mercados/feed/",
+                "https://br.investing.com/rss/news_95.rss",
+                "https://www.investing.com/rss/market_overview_all.rss",
+                "https://www.investing.com/rss/news_1.rss"
+            ],
+            "secondary": [
+                "https://www.federalreserve.gov/feeds/press_all.xml",
+                "https://www.imf.org/en/News/rss",
+                "https://www.worldbank.org/en/news/all.rss",
+                "https://www.ecb.europa.eu/rss/press.html"
+            ]
+        },
+        "web_scraping": {
+            "allowed_domains": [
+                "bcb.gov.br",
+                "infomoney.com.br",
+                "valor.com.br",
+                "investing.com",
+                "moneytimes.com.br",
+                "reuters.com",
+                "uol.com.br",
+                "globo.com"
+            ],
+            "base_urls": [
+                "https://www.bcb.gov.br/detalhenoticia",
+                "https://www.infomoney.com.br/mercados/cambio",
+                "https://br.investing.com/currencies/usd-brl-news",
+                "https://www.moneytimes.com.br/tag/dolar",
+                "https://economia.uol.com.br/cotacoes/cambio/",
+                "https://g1.globo.com/economia/noticia"
+            ]
+        }
+    },
+    "model_config": {
+        "model": "mixtral-8x7b-32768",
+        "temperature": 0.1,
+        "max_tokens": 2000,
+        "top_p": 0.1,
+        "frequency_penalty": 0.1,
+        "presence_penalty": 0.1
+    },
+    "data_paths": {
+        "raw_news": "data/raw/news",
+        "processed_news": "data/processed/news",
+        "impact_analysis": "data/processed/impact"
+    },
+    "collection_config": {
+        "max_articles_per_source": 50,
+        "max_threads": 4,
+        "retry_attempts": 3,
+        "request_timeout": 30,
+        "min_article_length": 100,
+        "max_article_age_days": 30,
+        "required_keywords": [
+            "dólar",
+            "real",
+            "câmbio",
+            "USD",
+            "BRL",
+            "forex",
+            "taxa de câmbio",
+            "mercado cambial",
+            "política monetária",
+            "banco central"
+        ],
+        "relevance_threshold": 0.7,
+        "scraping_delay": 5,
+        "max_retries": 3,
+        "follow_redirects": true,
+        "verify_ssl": false
+    }
+} 

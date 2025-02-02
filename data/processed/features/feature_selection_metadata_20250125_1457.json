@@ -1,0 +1,32 @@
+{
+    "timestamp": "20250125_1457",
+    "n_features": 20,
+    "n_samples": 1822,
+    "date_range": {
+        "start": "2020-01-31",
+        "end": "2025-01-25"
+    },
+    "features": [
+        "RESERVAS_INTERNACIONAIS",
+        "DIVIDA_PUBLICA",
+        "SELIC",
+        "SOJA_US",
+        "MILHO_US",
+        "BALANCA_COMERCIAL",
+        "news_prob_mean",
+        "FRETES",
+        "PIB_BR",
+        "CUSTO_LOGISTICA",
+        "news_impact_mean_volatility",
+        "news_impact_mean_trend_volatility",
+        "news_prob_mean_volatility",
+        "news_impact_mean",
+        "news_prob_mean_trend_volatility",
+        "ENERGIA",
+        "news_count_trend",
+        "news_count_volatility",
+        "news_count_trend_volatility",
+        "news_count"
+    ],
+    "target": "DOLAR"
+}

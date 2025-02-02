@@ -1,0 +1,18 @@
+{
+    "timestamp": "2025-01-29T00:14:34.171024",
+    "successful_sources": [],
+    "failed_sources": {
+        "banco_central": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "federal_reserve": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "banco_central_api": "Sem artigos retornados ap\u00f3s todas tentativas"
+    },
+    "source_attempts": {
+        "banco_central": 3,
+        "federal_reserve": 3,
+        "banco_central_api": 3
+    },
+    "collection_stats": {
+        "total_sources": 3,
+        "success_rate": 0.0
+    }
+}

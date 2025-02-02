@@ -1,0 +1,43 @@
+{
+    "timestamp": "20250125_1853",
+    "features_used": [
+        "RESERVAS_INTERNACIONAIS",
+        "DIVIDA_PUBLICA",
+        "SELIC",
+        "SOJA_US",
+        "MILHO_US",
+        "BALANCA_COMERCIAL",
+        "news_prob_mean",
+        "FRETES",
+        "PIB_BR",
+        "CUSTO_LOGISTICA",
+        "news_impact_mean_volatility",
+        "news_impact_mean_trend_volatility",
+        "news_prob_mean_volatility",
+        "news_impact_mean",
+        "news_prob_mean_trend_volatility",
+        "ENERGIA",
+        "news_count_trend",
+        "news_count_volatility",
+        "news_count_trend_volatility",
+        "news_count"
+    ],
+    "n_simulations": 10000,
+    "confidence_level": 0.95,
+    "simulation_results": {
+        "date": "2025-01-26",
+        "current_price": 5.923999786376953,
+        "prediction": 5.969050903008147,
+        "confidence_interval": {
+            "lower": 5.899098541061216,
+            "upper": 6.0396316577509666
+        },
+        "volatility": 0.005975973008574768,
+        "probability_up": 0.9021,
+        "simulation_stats": {
+            "mean": 5.969050903008147,
+            "std": 0.03546494904195726,
+            "n_simulations": 10000
+        }
+    }
+}

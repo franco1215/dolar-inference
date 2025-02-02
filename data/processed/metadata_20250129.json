@@ -1,0 +1,202 @@
+{
+  "start_date": "2020-01-01",
+  "end_date": "2025-01-29",
+  "features": {
+    "BALANCA_COMERCIAL": {
+      "missing_values": 1767,
+      "total_values": 1827,
+      "missing_percentage": 96.71592775041051,
+      "mean_value": -2985.8707430340555,
+      "std_value": 1900.404929701807,
+      "min_value": -10776.9,
+      "max_value": 3981.2
+    },
+    "BALTIC_DRY": {
+      "missing_values": 1823,
+      "total_values": 1827,
+      "missing_percentage": 99.78106185002737,
+      "mean_value": 210622.35897435897,
+      "std_value": 125.61203605877084,
+      "min_value": 209165.0,
+      "max_value": 211695.0
+    },
+    "CUSTO_LOGISTICA": {
+      "missing_values": 1823,
+      "total_values": 1827,
+      "missing_percentage": 99.78106185002737,
+      "mean_value": 49795.41641025642,
+      "std_value": 230.79059760838618,
+      "min_value": 46956.15,
+      "max_value": 51693.88
+    },
+    "DI_FUTURO": {
+      "missing_values": 574,
+      "total_values": 1827,
+      "missing_percentage": 31.417624521072796,
+      "mean_value": 8.862643678160921,
+      "std_value": 4.470314825503988,
+      "min_value": 1.9,
+      "max_value": 13.65
+    },
+    "DOLAR": {
+      "missing_values": 525,
+      "total_values": 1827,
+      "missing_percentage": 28.735632183908045,
+      "mean_value": 5.247119674280685,
+      "std_value": 0.33112285983653433,
+      "min_value": 4.23360013961792,
+      "max_value": 6.732399940490723
+    },
+    "ENERGIA": {
+      "missing_values": 1768,
+      "total_values": 1827,
+      "missing_percentage": 96.77066228790366,
+      "mean_value": 1979.4944881889764,
+      "std_value": 94.66769952708495,
+      "min_value": 1477.0,
+      "max_value": 2233.0
+    },
+    "FRETES": {
+      "missing_values": 1767,
+      "total_values": 1827,
+      "missing_percentage": 96.71592775041051,
+      "mean_value": 35601.822755417954,
+      "std_value": 5092.437085460628,
+      "min_value": 11857.0,
+      "max_value": 54695.0
+    },
+    "MILHO_BR": {
+      "missing_values": 1767,
+      "total_values": 1827,
+      "missing_percentage": 96.71592775041051,
+      "mean_value": 187.76105263157893,
+      "std_value": 37.373342652824874,
+      "min_value": 74.99,
+      "max_value": 330.55
+    },
+    "MILHO_US": {
+      "missing_values": 570,
+      "total_values": 1827,
+      "missing_percentage": 31.198686371100166,
+      "mean_value": 526.6877394636016,
+      "std_value": 130.74192998125437,
+      "min_value": 302.75,
+      "max_value": 818.25
+    },
+    "PIB_BR": {
+      "missing_values": 1767,
+      "total_values": 1827,
+      "missing_percentage": 96.71592775041051,
+      "mean_value": 828774.860526316,
+      "std_value": 75716.82000242318,
+      "min_value": 567968.1,
+      "max_value": 1061899.3
+    },
+    "RESERVAS_INTERNACIONAIS": {
+      "missing_values": 575,
+      "total_values": 1827,
+      "missing_percentage": 31.472359058565957,
+      "mean_value": 350623.877394636,
+      "std_value": 11355.623224849976,
+      "min_value": 323490.0,
+      "max_value": 372219.0
+    },
+    "SELIC": {
+      "missing_values": 1,
+      "total_values": 1827,
+      "missing_percentage": 0.05473453749315819,
+      "mean_value": 8.96264367816092,
+      "std_value": 4.470337795518699,
+      "min_value": 2.0,
+      "max_value": 13.75
+    },
+    "SOJA_US": {
+      "missing_values": 570,
+      "total_values": 1827,
+      "missing_percentage": 31.198686371100166,
+      "mean_value": 1280.3431171319103,
+      "std_value": 241.19921297175824,
+      "min_value": 821.75,
+      "max_value": 1769.0
+    }
+  },
+  "total_samples": 1827,
+  "trading_days_info": {
+    "total_calendar_days": 1856,
+    "total_trading_days": 1827,
+    "trading_days_percentage": "98.44%"
+  },
+  "missing_percentages": {
+    "BALANCA_COMERCIAL": 96.71592775041051,
+    "BALTIC_DRY": 99.78106185002737,
+    "CUSTO_LOGISTICA": 99.78106185002737,
+    "DI_FUTURO": 31.417624521072796,
+    "DOLAR": 28.735632183908045,
+    "ENERGIA": 96.77066228790366,
+    "FRETES": 96.71592775041051,
+    "MILHO_BR": 96.71592775041051,
+    "MILHO_US": 31.198686371100166,
+    "PIB_BR": 96.71592775041051,
+    "RESERVAS_INTERNACIONAIS": 31.472359058565957,
+    "SELIC": 0.05473453749315819,
+    "SOJA_US": 31.198686371100166
+  },
+  "temporal_distribution": {
+    "days_between_samples": {
+      "mean": "1.02",
+      "max": 30,
+      "min": 1
+    }
+  },
+  "feature_status": {
+    "configured": [
+      "SELIC",
+      "DI_FUTURO",
+      "CDS",
+      "DIVIDA_PUBLICA",
+      "BALANCA_COMERCIAL",
+      "RESERVAS_INTERNACIONAIS",
+      "INVESTIMENTO_ESTRANGEIRO",
+      "PIB_BR",
+      "SOJA_BR",
+      "SOJA_US",
+      "MILHO_BR",
+      "MILHO_US",
+      "ENERGIA",
+      "BALTIC_DRY",
+      "DOLAR",
+      "CUSTO_LOGISTICA",
+      "FRETES"
+    ],
+    "collected": [
+      "Value",
+      "feature_code",
+      "source"
+    ],
+    "missing": [
+      "SELIC",
+      "DI_FUTURO",
+      "CDS",
+      "DIVIDA_PUBLICA",
+      "BALANCA_COMERCIAL",
+      "RESERVAS_INTERNACIONAIS",
+      "INVESTIMENTO_ESTRANGEIRO",
+      "PIB_BR",
+      "SOJA_BR",
+      "SOJA_US",
+      "MILHO_BR",
+      "MILHO_US",
+      "ENERGIA",
+      "BALTIC_DRY",
+      "DOLAR",
+      "CUSTO_LOGISTICA",
+      "FRETES"
+    ],
+    "success_rate": "17.65%"
+  },
+  "last_update": {
+    "timestamp": "2025-01-29 09:45:02",
+    "market_status": "open",
+    "last_trading_date": "2025-01-29"
+  }
+}

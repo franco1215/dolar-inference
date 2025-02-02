@@ -1,0 +1,17 @@
+{
+  "collection_date": "2025-01-21T02:01:44.008705",
+  "lookback_years": 5,
+  "total_records": 3802,
+  "features_collected": [
+    "DOLAR",
+    "MILHO_US",
+    "SOJA_US"
+  ],
+  "date_range": {
+    "start": "2020-01-23T00:00:00",
+    "end": "2025-01-20T00:00:00"
+  },
+  "sources": [
+    "yahoo"
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "timestamp": "20250128_0157",
+  "target_variable": "DOLAR",
+  "lookback_days": 365,
+  "selected_features": [
+    "DIVIDA_PUBLICA_MA10",
+    "MILHO_US_MA5",
+    "CDS_MA5",
+    "DIVIDA_PUBLICA_MA5",
+    "INVESTIMENTO_ESTRANGEIRO_MA10",
+    "MILHO_BR_MA5",
+    "INVESTIMENTO_ESTRANGEIRO",
+    "SOJA_US",
+    "PIB_BR_MA10",
+    "BALANCA_COMERCIAL_MA5"
+  ],
+  "feature_scores": [
+    {
+      "feature": "DIVIDA_PUBLICA_MA10",
+      "score": 0.060465653093486615,
+      "selected": true
+    },
+    {
+      "feature": "MILHO_US_MA5",
+      "score": 0.056286742520815114,
+      "selected": true
+    },
+    {
+      "feature": "CDS_MA5",
+      "score": 0.03963390621378382,
+      "selected": true
+    },
+    {
+      "feature": "DIVIDA_PUBLICA_MA5",
+      "score": 0.036415173093627295,
+      "selected": true
+    },
+    {
+      "feature": "INVESTIMENTO_ESTRANGEIRO_MA10",
+      "score": 0.032128779566733545,
+      "selected": true
+    },
+    {
+      "feature": "MILHO_BR_MA5",
+      "score": 0.03010579532915303,
+      "selected": true
+    },
+    {
+      "feature": "INVESTIMENTO_ESTRANGEIRO",
+      "score": 0.02379786923266236,
+      "selected": true
+    },
+    {
+      "feature": "SOJA_US",
+      "score": 0.022977969807361998,
+      "selected": true
+    },
+    {
+      "feature": "PIB_BR_MA10",
+      "score": 0.022450064422701033,
+      "selected": true
+    },
+    {
+      "feature": "BALANCA_COMERCIAL_MA5",
+      "score": 0.016345708074544607,
+      "selected": true
+    },
+    {
+      "feature": "SOJA_US_MA5",
+      "score": 0.012964791142488163,
+      "selected": false
+    },
+    {
+      "feature": "CDS",
+      "score": 0.01154662151640351,
+      "selected": false
+    },
+    {
+      "feature": "ENERGIA_MA10",
+      "score": 0.0108121347567951,
+      "selected": false
+    },
+    {
+      "feature": "ENERGIA",
+      "score": 0.010003195079830274,
+      "selected": false
+    },
+    {
+      "feature": "ENERGIA_MA5",
+      "score": 0.009011906111736412,
+      "selected": false
+    },
+    {
+      "feature": "BALANCA_COMERCIAL",
+      "score": 0.00574342293261787,
+      "selected": false
+    },
+    {
+      "feature": "SELIC",
+      "score": 0.002511973604664375,
+      "selected": false
+    },
+    {
+      "feature": "DI_FUTURO",
+      "score": 0.002511973604664375,
+      "selected": false
+    },
+    {
+      "feature": "SELIC_MA10",
+      "score": 0.0007400026649400093,
+      "selected": false
+    },
+    {
+      "feature": "FRETES",
+      "score": 0.00032888835645272785,
+      "selected": false
+    },
+    {
+      "feature": "DI_FUTURO_MA5",
+      "score": 7.361212144996188e-05,
+      "selected": false
+    },
+    {
+      "feature": "BALTIC_DRY",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "SOJA_BR_MA5",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "SOJA_BR_MA10",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "SOJA_BR",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "CUSTO_LOGISTICA_MA10",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "CUSTO_LOGISTICA_MA5",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "CUSTO_LOGISTICA",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "BALTIC_DRY_MA10",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "BALTIC_DRY_MA5",
+      "score": 3.3306690738754696e-16,
+      "selected": false
+    },
+    {
+      "feature": "SELIC_MA5",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "RESERVAS_INTERNACIONAIS_MA10",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "RESERVAS_INTERNACIONAIS_MA5",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "DIVIDA_PUBLICA",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "PIB_BR_MA5",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "MILHO_US_MA10",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "INVESTIMENTO_ESTRANGEIRO_MA5",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "MILHO_BR_MA10",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "MILHO_BR",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "BALANCA_COMERCIAL_MA10",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "FRETES_MA10",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "FRETES_MA5",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "MILHO_US",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "PIB_BR",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "DI_FUTURO_MA10",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "RESERVAS_INTERNACIONAIS",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "CDS_MA10",
+      "score": 0.0,
+      "selected": false
+    },
+    {
+      "feature": "SOJA_US_MA10",
+      "score": 0.0,
+      "selected": false
+    }
+  ],
+  "correlations": {
+    "BALANCA_COMERCIAL": -0.0709809823736121,
+    "BALTIC_DRY": NaN,
+    "CDS": -0.023608254456662165,
+    "CUSTO_LOGISTICA": NaN,
+    "DIVIDA_PUBLICA": 0.04015036338422504,
+    "DI_FUTURO": -0.11095181007310169,
+    "ENERGIA": 0.042321614043870734,
+    "FRETES": 0.03434921121077912,
+    "INVESTIMENTO_ESTRANGEIRO": -0.012455071768620573,
+    "MILHO_BR": 0.010422224602438154,
+    "MILHO_US": 0.0627275531071837,
+    "PIB_BR": 0.009061578760552524,
+    "RESERVAS_INTERNACIONAIS": -0.04403290600991608,
+    "SELIC": -0.11121345107960573,
+    "SOJA_BR": NaN,
+    "SOJA_US": 0.045931537061050125,
+    "BALANCA_COMERCIAL_MA5": -0.02010267981777865,
+    "BALANCA_COMERCIAL_MA10": -0.016357978629300003,
+    "BALTIC_DRY_MA5": NaN,
+    "BALTIC_DRY_MA10": NaN,
+    "CDS_MA5": -0.01390896627425528,
+    "CDS_MA10": 0.017361963478036497,
+    "CUSTO_LOGISTICA_MA5": NaN,
+    "CUSTO_LOGISTICA_MA10": NaN,
+    "DIVIDA_PUBLICA_MA5": 0.03216686095880081,
+    "DIVIDA_PUBLICA_MA10": 0.047530265665692434,
+    "DI_FUTURO_MA5": 0.02182272659304143,
+    "DI_FUTURO_MA10": 0.02614242394198951,
+    "ENERGIA_MA5": 0.004317793500722467,
+    "ENERGIA_MA10": -0.04458731331171544,
+    "FRETES_MA5": -0.001050502487100046,
+    "FRETES_MA10": -0.04777021761748602,
+    "INVESTIMENTO_ESTRANGEIRO_MA5": 0.03495387922715501,
+    "INVESTIMENTO_ESTRANGEIRO_MA10": 0.035259416009000955,
+    "MILHO_BR_MA5": 0.017944798094896915,
+    "MILHO_BR_MA10": -0.016331138250945672,
+    "MILHO_US_MA5": -0.19068329464626627,
+    "MILHO_US_MA10": -0.05433454595487761,
+    "PIB_BR_MA5": -0.013413920671120164,
+    "PIB_BR_MA10": -0.0503391420114582,
+    "RESERVAS_INTERNACIONAIS_MA5": -0.07189112337774262,
+    "RESERVAS_INTERNACIONAIS_MA10": -0.031997027277357336,
+    "SELIC_MA5": 0.021785846134695513,
+    "SELIC_MA10": 0.026200553984912212,
+    "SOJA_BR_MA5": NaN,
+    "SOJA_BR_MA10": NaN,
+    "SOJA_US_MA5": -0.16023397930107836,
+    "SOJA_US_MA10": -0.09805753140798139
+  },
+  "data_range": {
+    "start": "2024-01-29",
+    "end": "2025-01-27"
+  },
+  "statistics": {
+    "total_features": 48,
+    "total_samples": 251,
+    "features_selected": 10
+  }
+}

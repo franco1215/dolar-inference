@@ -1,0 +1,65 @@
+{
+    "sources": {
+        "banco_central": {
+            "name": "Banco Central do Brasil",
+            "endpoints": {
+                "noticias": "https://www.bcb.gov.br/noticias",
+                "comunicados": "https://www.bcb.gov.br/comunicados",
+                "notas_imprensa": "https://www.bcb.gov.br/notas-imprensa",
+                "publicacoes": "https://www.bcb.gov.br/publicacoes"
+            },
+            "topics": [
+                "inflação",
+                "mercado cambial",
+                "fluxo cambial",
+                "balanço de pagamentos",
+                "reservas internacionais",
+                "swap cambial",
+                "intervenção cambial",
+                "copom",
+                "ptax",
+                "taxa de juros",
+                "economia internacional",
+                "balança comercial",
+                "investimento estrangeiro"
+            ]
+        },
+        "federal_reserve": {
+            "name": "Federal Reserve",
+            "endpoints": {
+                "press_releases": "https://www.federalreserve.gov/feeds/press_all.xml"
+            },
+            "topics": [
+                "monetary policy",
+                "interest rates",
+                "inflation",
+                "economic outlook",
+                "foreign exchange",
+                "financial stability"
+            ]
+        }
+    },
+    "request_config": {
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "none",
+            "Sec-Fetch-User": "?1"
+        },
+        "timeout": 30,
+        "verify_ssl": true,
+        "max_retries": 3,
+        "retry_delay": 5
+    },
+    "collection_config": {
+        "min_article_length": 100,
+        "max_articles_per_source": 1000,
+        "days_back": 30
+    }
+} 

@@ -1,0 +1,43 @@
+{
+    "timestamp": "2025-01-25T19:10:27.911754",
+    "successful_sources": [
+        "https://www.federalreserve.gov/feeds/press_all.xml",
+        "https://www.moneytimes.com.br/feed/",
+        "https://www.infomoney.com.br/feed/"
+    ],
+    "failed_sources": {
+        "banco_central": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "federal_reserve": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "banco_central_api": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://agenciadenoticias.bcb.gov.br/feed.xml": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://www.reuters.com/arc/outboundfeeds/v3/all/": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://economia.uol.com.br/feed/cambio.xml": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://br.investing.com/rss/news_301.rss": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://br.investing.com/rss/news_285.rss": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://g1.globo.com/rss/g1/economia/mercados/": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://www.imf.org/en/News/rss": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://www.worldbank.org/en/news/all.rss": "Sem artigos retornados ap\u00f3s todas tentativas",
+        "https://www.ecb.europa.eu/rss/press.html": "Sem artigos retornados ap\u00f3s todas tentativas"
+    },
+    "source_attempts": {
+        "banco_central": 3,
+        "federal_reserve": 3,
+        "banco_central_api": 3,
+        "https://agenciadenoticias.bcb.gov.br/feed.xml": 3,
+        "https://www.infomoney.com.br/feed/": 0,
+        "https://www.moneytimes.com.br/feed/": 0,
+        "https://br.investing.com/rss/news_301.rss": 3,
+        "https://br.investing.com/rss/news_285.rss": 3,
+        "https://www.reuters.com/arc/outboundfeeds/v3/all/": 3,
+        "https://economia.uol.com.br/feed/cambio.xml": 3,
+        "https://g1.globo.com/rss/g1/economia/mercados/": 3,
+        "https://www.federalreserve.gov/feeds/press_all.xml": 0,
+        "https://www.imf.org/en/News/rss": 3,
+        "https://www.worldbank.org/en/news/all.rss": 3,
+        "https://www.ecb.europa.eu/rss/press.html": 3
+    },
+    "collection_stats": {
+        "total_sources": 15,
+        "success_rate": 20.0
+    }
+}
